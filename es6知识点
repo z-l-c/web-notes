@@ -1,0 +1,40 @@
+# Symbol
+原始数据类型，表示唯一值
+let s = Symbol()
+
+# 箭头函数
+1.形式()=>{}，返回值是对象时，需要用小括号包括
+2.this指向父作用域，而不是调用时的对象，且无法改变
+3.不能使用作为构造函数，不能使用arguments（视浏览器，如ff36可以），不能使用yield
+
+# let和const
+let定义块级作用域变量，不是全局变量，大多数情况不会发生变量提升；const定义常量，无法修改，如果定义的是引用类型，可以修改变量内部的属性值
+
+# Set数据结构
+Set本身是一个构造函数，数据集合，成员唯一
+
+# Class
+更传统的原型、继承、面向对象语法
+
+# 字符串新增方法（部分）
+startsWith、endsWith，判断字符串的开头和结尾
+includes，判断是否包含
+padStart、padEnd，字符串补全
+repeat，重复字符串
+
+# 模板字符串
+界定符号${}，字符串拼接时使用反引号(`)
+使用方式：
+   const word = 'world' 
+   conosle.log(`hello ${word}`)
+
+# 数组新增方法（部分）
+includes、find、findIndex，查找元素
+flat，数组拉平到一维
+
+# 展开操作符
+var arr = [1,2,3]
+var arr_copy = [...arr]
+
+# Promise
+异步编程解决方案。Promise一个对象，其内部包含未来才会结束的结果，通常是一个异步操作
